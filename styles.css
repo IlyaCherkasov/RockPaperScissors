@@ -40,6 +40,18 @@ header > h1 {
     font-family: "Comic Sans MS", serif;
 }
 
+#user-label{
+    position: absolute;
+    top: 35px;
+    left: -25px;
+}
+
+#comp-label{
+    position: absolute;
+    top: 35px;
+    right: -25px;
+}
+
 .result{
     font-size: 40px;
     color: white;
@@ -63,6 +75,11 @@ header > h1 {
     margin: 0 20px;
     display: inline-block;
     transition: all 0.3s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: white;
 }
 
 #action-message{
