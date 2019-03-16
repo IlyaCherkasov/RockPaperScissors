@@ -75,6 +75,7 @@ header > h1 {
     margin: 0 20px;
     display: inline-block;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .choice:hover{
