@@ -75,7 +75,6 @@ header > h1 {
     margin: 0 20px;
     display: inline-block;
     transition: all 0.3s ease;
-    margin-bottom: 20px;
 }
 
 .choice:hover{
@@ -90,4 +89,28 @@ header > h1 {
     color: white;
     font-weight: bold;
     margin-top: 20px;
+}
+
+@media (max-width: 727px){
+    header > h1{
+        font-size: 30px;
+    }
+    .result{
+        font-size: 30px;
+    }
+    #action-message{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .choices{
+        width: 250px;
+        margin: 0 auto;
+    }
+    #p{
+        margin-top: 20px;
+    }
+    .choice{
+        margin-bottom: 20px;
+        vertical-align: middle;
+    }
 }
