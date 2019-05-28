@@ -41,13 +41,16 @@ function win(user, comp){
     userScore++;
     userScore_span.innerHTML = userScore;
     result_div.innerHTML = convert(user) + " - ваш выбор, " + convert(comp) + " - выбор компьютера. Вы победили!!! Поздравляю!";
-    
+    document.getElementById(user).classList.add('green-glow');
+    setTimeout(function(){document.getElementById(user).classList.remove('green-glow')}, 300);
 }
 
 function lose(user, comp){
     compScore++;
     compScore_span.innerHTML = compScore;
     result_div.innerHTML = convert(user) + " - ваш выбор, " + convert(comp) + " - выбор компьютера. Вы проиграли...";
+    document.getElementById(user).classList.add('red-glow');
+    setTimeout(function(){document.getElementById(user).classList.remove('red-glow')}, 300);
 }
 
 function game(userChoice){
@@ -62,6 +65,8 @@ function game(userChoice){
             break;
         case "rr": case "pp": case "ss":
             result_div.innerHTML = convert(userChoice) + " - это то, что выбрали все. Ничья!";
+            document.getElementById(user).classList.add('grey-glow');
+            setTimeout(function(){document.getElementById(user).classList.remove('grey -glow')}, 300);
             break;
     }
 }
