@@ -116,7 +116,6 @@ img {
     .choices{
         width: 250px;
         margin: 0 auto;
-        flex-direction: column;
     }
     #p{
         margin-top: 20px;
