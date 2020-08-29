@@ -117,12 +117,9 @@ img {
         width: 250px;
         margin: 0 auto;
     }
-    #p{
-        margin-top: 20px;
-    }
     .choice{
         width: 100px;
-        heigth: 100px;
+        height: 100px;
     }
     img { width: 70px; }
 }
@@ -130,7 +127,7 @@ img {
 @media (max-width: 400px){
     .choice{
         width: 80px;
-        heigth: 80px;
+        height: 80px;
     }
     img { width: 50px; }
 }
