@@ -53,9 +53,14 @@ function lose(user, comp){
     setTimeout(function(){document.getElementById(user).classList.remove('red-glow')}, 300);
 }
 
+function draw(user, comp){
+    result_div.innerHTML = convert(user) + " - это то, что выбрали все. Ничья!";
+    document.getElementById(user).classList.add('yellow-glow');
+    setTimeout(function(){document.getElementById(user).classList.remove('yellow-glow')}, 300);
+}
+
 function game(userChoice){
     const compChoice = getComputerChoice();
-    console.log(userChoice, compChoice);
     switch (userChoice + compChoice){
         case 'rs': case 'pr': case 'sp':
             win(userChoice, compChoice);
@@ -64,9 +69,7 @@ function game(userChoice){
             lose(userChoice, compChoice);
             break;
         case "rr": case "pp": case "ss":
-            result_div.innerHTML = convert(userChoice) + " - это то, что выбрали все. Ничья!";
-            document.getElementById(user).classList.add('grey-glow');
-            setTimeout(function(){document.getElementById(user).classList.remove('grey -glow')}, 300);
+            draw(userChoice, compChoice);
             break;
     }
 }
