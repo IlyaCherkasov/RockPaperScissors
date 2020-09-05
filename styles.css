@@ -55,7 +55,6 @@ header > h1 {
 .result{
     font-size: 40px;
     color: white;
-    height: 210px;
 }
 
 .result > p{
@@ -66,7 +65,7 @@ header > h1 {
 
 
 .choices{
-    margin-top: 50px;
+    margin: 50px auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -94,13 +93,24 @@ img {
     width: 150px;
 }
 
-#action-message{
+#rules-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#rules-img > img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#action-message, #emote, #rules{
     text-align: center;
     font-size: 30px;
     font-family: "Comic Sans MS", serif;
     color: white;
     font-weight: bold;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 @media (max-width: 727px){
@@ -110,14 +120,11 @@ img {
     .result{
         font-size: 30px;
     }
-    #action-message{
+    #action-message, #emote, #rules{
         font-size: 20px;
         margin-top: 0px;
     }
-    .choices{
-        width: 250px;
-        margin: 0 auto;
-    }
+    .choices { margin: 30px auto; }
     .choice{
         width: 100px;
         height: 100px;
@@ -129,6 +136,7 @@ img {
     .choice{
         width: 80px;
         height: 80px;
+        margin: 0 10px;
     }
     img { width: 50px; }
 }

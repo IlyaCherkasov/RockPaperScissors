@@ -8,29 +8,34 @@
     <link rel="icon" href="rock.png" type="image/png">
 </head>
 <body>
-<header>
-    <h1>Камень Ножницы Бумага</h1>
-</header>
-<div class="score-board">
-    <div id="user-label" class="badge">Игрок</div>
-    <div id="comp-label" class="badge">Комп</div>
-    <span id="user-score">0</span>:<span id="comp-score">0</span>
-</div>
-<div class="result">
-    <p>Выбирай Камень, Бумагу или Ножницы и посмотри, кто победит.</p>
-</div>
-<div class="choices">
-    <div class="choice" id="p">
-        <img src="paper.png">
+    <header>
+        <h1>Камень Ножницы Бумага</h1>
+    </header>
+    <div class="score-board">
+        <div id="user-label" class="badge">Игрок</div>
+        <div id="comp-label" class="badge">Комп</div>
+        <span id="user-score">0</span>:<span id="comp-score">0</span>
     </div>
-    <div class="choice" id="r">
-        <img src="rock.png">
+    <div class="result">
+        <p>Выбирай одно</p>
     </div>
-    <div class="choice" id="s">
-        <img src="scissors.png">
+    <div class="choices">
+        <div class="choice" id="p">
+            <img src="paper.png">
+        </div>
+        <div class="choice" id="r">
+            <img src="rock.png">
+        </div>
+        <div class="choice" id="s">
+            <img src="scissors.png">
+        </div>
     </div>
-</div>
-<p id="action-message">Твой ход, выбирай.</p>
-<script src="script.js"></script>
+    <p id="emote">(¬_¬ )</p>
+    <p id="action-message">Твой ход, выбирай.</p>
+    <p id="rules">Правила игры</p>
+    <div id='rules-img'>
+        <img src='rules.png'>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
